@@ -30,34 +30,35 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen">
-      
+    <div className="min-h-screen font-sans">
+
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-20 left-20 w-72 h-72 bg-orange-500 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
           <div
             className={`transition-all duration-1000 transform ${
-              isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+              isVisible
+                ? "translate-y-0 opacity-100"
+                : "translate-y-10 opacity-0"
             }`}
           >
-            <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Crafting Visual
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-500 animate-pulse">
                 Excellence
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
+            <p className="text-lg md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
               Transforming ideas into stunning designs that captivate and inspire
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              
               <Link
                 href="/portfolio"
                 className="group px-8 py-4 bg-orange-500 text-white rounded-full font-semibold transition-all duration-300 hover:bg-orange-600 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/50 flex items-center justify-center gap-2"
@@ -72,15 +73,25 @@ export default function Home() {
               >
                 Learn More
               </Link>
-
             </div>
           </div>
         </div>
+      </section>
 
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2">
-            <div className="w-1 h-2 bg-white/50 rounded-full animate-pulse"></div>
-          </div>
+      {/* Brands Trust Section */}
+      <section className="py-20 bg-white text-center">
+        <p className="text-gray-500 text-lg">
+          Empowering businesses with innovation & trust
+        </p>
+
+        <h3 className="font-bold text-3xl md:text-5xl bg-gradient-to-r from-indigo-500 via-blue-500 to-purple-600 text-transparent bg-clip-text mt-4">
+          Trusted by 500+ Happy Clients
+        </h3>
+
+        <div className="flex justify-center mt-6 gap-2">
+          <div className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
+          <div className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse delay-200"></div>
+          <div className="w-2 h-2 rounded-full bg-purple-500 animate-pulse delay-400"></div>
         </div>
       </section>
 
@@ -118,7 +129,7 @@ export default function Home() {
           <p className="text-xl text-gray-300 mb-10">
             Let's create something amazing together
           </p>
-          
+
           <Link
             href="/portfolio"
             className="group px-10 py-5 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/50 inline-flex items-center gap-2"
@@ -126,12 +137,10 @@ export default function Home() {
             Explore Portfolio
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
-
         </div>
       </section>
 
-      <TestimonialSlider/>
-
+      <TestimonialSlider />
     </div>
   );
 }

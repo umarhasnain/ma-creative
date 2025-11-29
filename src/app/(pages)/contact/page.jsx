@@ -355,7 +355,7 @@ export default function ContactPage() {
                         {/* REQUIRED HIDDEN VALUES */}
                         <input type="hidden" name="_captcha" value="false"/>
                         <input type="hidden" name="_template" value="box"/>
-                        <input type="hidden" name="_next" value="https://https://ma-creative.vercel.app/contact?success=true" />
+                        <input type="hidden" name="_next" value="https://https://ma-creative.vercel.app/contact" />
 
                         {/* Auto reply */}
                         <input type="hidden" name="_autoresponse" value="Thank you for contacting Ahsan! I will get back to you shortly." />
