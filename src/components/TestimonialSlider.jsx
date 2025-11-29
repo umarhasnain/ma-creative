@@ -55,7 +55,7 @@ export default function TestimonialSlider() {
   return (
     <section className="max-w-6xl mx-auto px-6 py-20 relative">
       <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-12">
-        Hear From Our Clients
+        Experience Shared By Clients
       </h2>
 
       {/* Testimonial Card */}

@@ -17,14 +17,14 @@ export const metadata = {
   title: "MA Creative | Graphic Designer",
   description: "Showcasing creative web, branding, and UI/UX design projects by a professional designer.",
   keywords: "Portfolio, Web Design, Branding, UI/UX Design, Creative Designer, Graphic Design, Muhammad Ahsan, Social Media, UI Design, UX Design, Social Post Design, MA Creative",
-  authors: [{ name: "Muhammad Ahsan", url: "https://yourwebsite.com" }],
+  authors: [{ name: "Muhammad Ahsan", url: "https://ma-creative.vercel.app/" }],
   creator: "Muhammad Ahsan",
   publisher: "Muhammad Ahsan",
   openGraph: {
     type: "website",
     title: "MA Creative | Graphic Designer",
     description: "Showcasing creative web, branding, and UI/UX design projects by a professional designer.",
-    url: "https://yourwebsite.com",
+    url: "https://ma-creative.vercel.app/",
     siteName: "Muhammad Ahsan",
     images: [
       {
@@ -43,13 +43,16 @@ export const metadata = {
     creator: "@yourtwitterhandle",
   },
   alternates: {
-    canonical: "https://yourwebsite.com",
+    canonical: "https://ma-creative.vercel.app/",
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="EVKLEb62GcPN4ZuWrmHI7gS2z429ER6C-hUZymS8dXI" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 overflow-x-hidden`}
       >
