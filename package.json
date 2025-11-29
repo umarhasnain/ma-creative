@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "biome check",
-    "format": "biome format --write",
-     "generate-sitemap": "node scripts/generate-sitemap.js"
+    "format": "biome format --write"
   },
   "dependencies": {
     "lucide-react": "^0.555.0",
